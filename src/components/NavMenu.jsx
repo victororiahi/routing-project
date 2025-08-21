@@ -32,6 +32,10 @@ const NavMenu = () => {
         <NavLink to="/about" className="left">About</NavLink>
         <NavLink to="/contact" className="left">Contact</NavLink>
         <NavLink to="/users" className="left">Users</NavLink>
+        <NavLink to="/articles" className="left">Articles</NavLink>
+        <NavLink to="/doctors" className="left">Doctors</NavLink>
+        <NavLink to="/gallery" className="left">Gallery</NavLink>
+        
       </div>
       
       <div className="nav-auth">

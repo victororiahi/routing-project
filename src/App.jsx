@@ -9,6 +9,12 @@ import Contact from './components/Contact.jsx'
 import LogIn from './components/Login.jsx'
 import Register from './components/Register.jsx'
 import User from './components/User.jsx'
+import Articles from './components/Articles.jsx'
+import DoctorPage from './pages/DoctorPage.jsx'
+import Doctors from './components/Doctors.jsx'
+import Article from './components/Article.jsx'
+import ArticlePage from './pages/ArticlePage.jsx'
+import Gallery from './components/Gallery.jsx'
 import { ToastContainer as ToastMaster } from 'react-toastify'
 import { useLocation } from 'react-router-dom'
 
@@ -32,6 +38,12 @@ function AppLayout() {
           <Route path="/login" element={<LogIn />} />
           <Route path="/register" element={<Register />} />
           <Route path="/users" element={<User />} />
+          <Route path="/articles" element={<Articles/>} />
+          <Route path="/articles/:id" element={<ArticlePage/>} />
+          <Route path="/doctors/:id" element={<DoctorPage/>}/>
+          <Route path="/doctors" element={<Doctors/>} />
+          <Route path="/articles/:id" element={<Article/>} />
+          <Route path="/gallery" element={<Gallery/>} />
         </Routes>
         <ToastMaster position='top-right' autoClose={3000}/>
 

@@ -1,0 +1,120 @@
+.doctors-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+flex-wrap: wrap;
+
+}
+
+.doctor-title{
+   color: #2c3e50;
+   font-weight: bold; 
+}
+.doctors-title{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+.doctors-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.no-underline{
+    text-decoration: none;
+
+}
+.doctor-card{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    cursor: pointer;
+    width: 600px;
+}
+
+.doctor-header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.doctor-author-avatar{
+ max-width: 150px;
+ max-height: 150px;
+  
+}
+
+.doctor-author-avatar img{
+    width: 140px;
+    height: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.author-name{
+    color: #1b130e;
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: normal;
+    margin: 0;
+}
+
+.doctor-date-time{
+    color: #9c5b26;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.image-wrapper{
+    flex: 1;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.image-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+   display: block;
+}
+
+.doctor-info{
+    max-height: 200px;
+    padding: 10px 15px;
+    background: white;
+    text-align: left;
+}
+
+.doctor-info h3{
+    margin: 0 0 5px;
+    color: #34495e;
+}
+
+.doctor-info p{
+    font-size: 0.9em;
+    margin: 0;
+    color: #7f8c8d;
+}
+
+.doctors-grid :hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
