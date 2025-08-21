@@ -1,19 +1,19 @@
 .container {
     padding: 30px;
-    background: #f9fafc;
-    max-width: 1000px;
+    background: #e8ecf6;
+    max-width: 100%;
     margin: auto;
     font-family: 'Segoe UI', sans-serif;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
 }
 
 .user-card {
     display: flex;
     align-items: center;
-    background: white;
-    border: 1px solid #e0e0e0;
+    background: rgb(255, 255, 255);
+    border: 1px solid #a3a0a0;
     border-radius: 12px;
     padding: 15px 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -22,7 +22,7 @@
 
 .user-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 14px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 14px rgba(0,0,0,0.1);
     cursor: pointer;
 }
 

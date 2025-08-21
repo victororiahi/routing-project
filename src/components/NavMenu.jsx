@@ -35,10 +35,15 @@ const NavMenu = () => {
         <NavLink to="/articles" className="left">Articles</NavLink>
         <NavLink to="/doctors" className="left">Doctors</NavLink>
         <NavLink to="/gallery" className="left">Gallery</NavLink>
-        
+
       </div>
       
       <div className="nav-auth">
+        <NavLink to="/register" className="signup-link">
+          <button>Signup</button>
+        </NavLink>
+
+        
         {isLoggedIn 
         ? (<div className="user-menu">
         <button className="user-menu-trigger" onClick={() => setMenuOpen(!menuOpen)}>

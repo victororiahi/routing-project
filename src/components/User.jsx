@@ -1,6 +1,7 @@
 import axios from '../api/http.js'
 import { useState, useEffect } from 'react'
 import '../css/User.css'
+import { Navigate } from 'react-router-dom'
 
 
 const User = () => {
