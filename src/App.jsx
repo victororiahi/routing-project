@@ -41,7 +41,7 @@ function AppLayout() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/users" element={<ProtectedRoute isLoggedIn={isLoggedIn}><User/></ProtectedRoute>} />
+          <Route path="/users" element={<User/>} />
           
           <Route element={<ProtectedRoute isLoggedIn={isLoggedIn} />}>
           <Route path="/articles" element={<Articles/>} />
