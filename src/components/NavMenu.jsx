@@ -20,7 +20,7 @@ const NavMenu = () => {
     const handleLogout = () => {
       const loadingToast = toast.loading('Logging out...')
       logout();
-      toast.update(loadingToast, { render: 'Logged out successfully', type: 'success', isLoading: false, autoClose: 3000 });
+      toast.update(loadingToast, { render: 'Logged out successfully.', type: 'success', isLoading: false, autoClose: 3000 });
       navigate('/login');
     };
 
